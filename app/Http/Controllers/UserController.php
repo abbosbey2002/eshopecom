@@ -13,13 +13,14 @@ class UserController extends Controller
     }
 
     public function sign(Request $req){
-       
+
 
         $login=User::where('login', $req->input('login'))->get();
-        
+
            if(count($login)){
             $password=$login[0]->password;
                if($login[0]->login == $req->input('login') && $password == $req->input('password')){
+                   session(['username'=>$login[0]->login]);
                    return view('main');
                }else{
                    return view('login')->with('error', 'password');
@@ -28,6 +29,6 @@ class UserController extends Controller
                 return view('login')->with('error', 'user');
                }
     }
-        
-    
+
+
 }

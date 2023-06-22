@@ -18,7 +18,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="./build/assets/app-4532f5d7.css" rel="stylesheet">
 
 </head>
 
@@ -111,7 +111,7 @@
                         <h6 class="collapse-header">Login Screens:</h6>
                         <a class="collapse-item" href="login">Login</a>
                         <a class="collapse-item" href="register">Register</a>
-                        <a class="collapse-item" href="forgot-password">Forgot Password</a>
+                        <a class="collapse-item" href="forget-password">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
                         <a class="collapse-item" href="404">404 Page</a>

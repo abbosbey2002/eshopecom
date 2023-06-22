@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('main');
 // });
 
-Route::get('/', [PageController::class, 'main']);
+Route::get('/main', [PageController::class, 'main']);
 
 Route::get('cards', [PageController::class, 'cards']);
 
@@ -44,8 +44,9 @@ Route::get('utilities-border', [PageController::class, 'utilitiesborder']);
 Route::get('utilities-other', [PageController::class, 'utilitiesother']);
 Route::get('utilities-animation', [PageController::class, 'utilitiesanimation']);
 
+Route::get('header',  [PageController::class, 'header']);
 
-Route::get('login',  [UserController::class, 'login']);
+Route::get('/',  [UserController::class, 'login']);
 
 Route::post('login', [UserController::class, 'sign']);
 

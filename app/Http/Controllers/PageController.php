@@ -10,6 +10,9 @@ class PageController extends Controller
     public function main(){
         return view('main');
     }
+    public function header(){
+        return view('layout/header');
+    }
 
     public function cards(){
         return view('cards');
