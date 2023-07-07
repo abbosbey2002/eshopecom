@@ -62,8 +62,6 @@ Route::get('/login',  [UserController::class, 'login']);
 
 Route::post('login', [UserController::class, 'sign']);
 
-Route::resource('portfolyo', PortfolyoController::class);
-
 Route::resource('/product', ProductController::class);
 
 Route::resource('/category', CategoryController::class);
